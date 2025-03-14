@@ -45,3 +45,30 @@ def long_function_name(
     var_one, var_two, var_three,
     var_four):
     print(var_one)
+
+
+this_is_one_thing = None
+that_is_another_thing = None
+
+def do_something():
+    pass
+
+
+# With if statements whose conditionals wrap to another line its fine to not add extra indent for body
+if (this_is_one_thing and
+    that_is_another_thing):
+    do_something()
+
+
+
+# Closing brace of a construct should line up under the first character of last line of the items
+my_list = [
+    1, 2, 3,
+    4, 5, 6
+    ]
+
+# Or it can line up to first letter of the label
+my_list_2 = [
+    1, 2, 3,
+    4, 5, 6
+]
